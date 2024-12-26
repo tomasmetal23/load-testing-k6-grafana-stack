@@ -32,7 +32,7 @@ k6 es una herramienta moderna de pruebas de carga de código abierto que facilit
 1.  Clona este repositorio:
 
     ```bash
-    git clone [se quitó una URL no válida]
+    git clone https://github.com/tomasmetal23/load-testing-k6-grafana-stack.git
     ```
 
 2.  Navega al directorio del repositorio:
