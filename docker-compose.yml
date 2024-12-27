@@ -23,6 +23,9 @@ services:
       - "2181:2181"
     networks:
       - monitoring
+    environment:
+      - ZOO_ENABLE_AUTH=yes
+      - ALLOW_ANONYMOUS_LOGIN=yes
   k6:
     image: grafana/k6
     volumes:
