@@ -29,7 +29,7 @@ services:
       - type: bind
         source: ./load-testing
         target: /load-testing
-    entrypoint: ["k6", "run", "--out", "prometheus=http://prometheus:9090", "/load-testing/load-test-wp.js"]
+    entrypoint: ["k6", "run", "--out", "experimental-prometheus-rw=http://prometheus:9090", "/load-testing/load-test-wp.js"]
     ports:
       - "9000:9000"
     networks:
