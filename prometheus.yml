@@ -7,8 +7,8 @@ scrape_configs:
 #- job_name: 'express-app'
  # static_configs:
   #  - targets: ['host.docker.internal:3000'] # No "http://"
-- job_name: 'k6-load-tests'
-  static_configs:
-    - targets: ['k6:9000']
+  - job_name: 'k6-load-tests'
+    static_configs:
+      - targets: ['k6:9000']
 
 
