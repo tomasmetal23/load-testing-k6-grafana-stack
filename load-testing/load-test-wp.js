@@ -18,7 +18,7 @@ export let options = {
     }
 };
 
-const BASE_URL = 'https://tu-sitio-wordpress.com';  // Cambia esto
+const BASE_URL = 'https://blog.saiyans.com.ve';  // Cambia esto
 const ENDPOINTS = [
     '/',                    // Página principal
     '/blog/',              // Blog
