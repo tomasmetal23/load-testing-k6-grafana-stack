@@ -57,6 +57,8 @@ services:
       - prometheus
     networks:
       - monitoring
+    volumes:
+      - grafana-storage:/var/lib/grafana
 
   influxdb:
     image: influxdb:latest
@@ -72,18 +74,19 @@ services:
     networks:
       - monitoring
 ### Data InfluxDB
-#    volumes:
-#      - type: volume
-#        source: influxdb2-data
-#        target: /var/lib/influxdb2
-#      - type: volume
-#        source: influxdb2-config
-#        target: /etc/influxdb2
+    volumes:
+      - type: volume
+        source: influxdb2-data
+        target: /var/lib/influxdb2
+      - type: volume
+        source: influxdb2-config
+        target: /etc/influxdb2
 ###################################    
 
-#volumes:
-#  influxdb2-data:
-#  influxdb2-config:
+volumes:
+  influxdb2-data:
+  influxdb2-config:
+  grafana-storage:
 ####################
 networks:
   monitoring:
