@@ -1,8 +1,4 @@
 services:
-  #your-app-service:
-   # image: your-app-image
-    #ports:
-     # - "3000:3000"
   kafka:
     image: bitnami/kafka:latest
     environment:

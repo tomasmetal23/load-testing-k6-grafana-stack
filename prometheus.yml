@@ -1,5 +1,6 @@
 global:
   scrape_interval: 15s
+  
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
@@ -8,9 +9,7 @@ scrape_configs:
   - job_name: 'kafka'
     static_configs:
       - targets: ['kafka:9092']
-#- job_name: 'express-app'
- # static_configs:
-  #  - targets: ['host.docker.internal:3000'] # No "http://"
+
   - job_name: 'k6-load-tests'
     static_configs:
       - targets: ['k6:9000']
